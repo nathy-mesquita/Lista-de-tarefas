@@ -80,7 +80,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Text("Tipos"),
+        //leading: Text("Tipos"),
         title: TextFormField(
           controller: newTaskCtrl,
           keyboardType: TextInputType.text,
@@ -94,7 +94,10 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         actions: <Widget>[
-          Icon(Icons.star_half),
+          Icon(
+            Icons.check,
+            size: 30,
+          ),
         ],
       ),
       body: ListView.builder(
